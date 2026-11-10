@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ибрахимов Шахзод</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="game">
+  <header>
+    <h1>4 фото — 1 слово</h1>
+    <p class="sub">Конституционное право</p>
+    <div class="progress" aria-label="Прогресс"><div id="bar"></div></div>
+    <p class="level" id="level"></p>
+  </header>
+
+  <section class="pics" id="pics" aria-label="Четыре картинки"></section>
+  <p class="hint" id="hint"></p>
+
+  <section class="slots" id="slots" aria-label="Ответ"></section>
+  <p class="msg" id="msg" role="status"></p>
+
+  <section class="pool" id="pool" aria-label="Буквы"></section>
+
+  <div class="actions">
+    <button id="erase" class="ghost">Стереть букву</button>
+    <button id="clear" class="ghost">Очистить всё</button>
+    <button id="next" class="primary" hidden>Дальше</button>
+  </div>
+</main>
+
+<section class="end" id="end" hidden>
+  <div class="end-card">
+    <h2>Все 15 слов угаданы</h2>
+    <p>Ошибок: <b id="errors">0</b></p>
+    <button id="restart" class="primary">Играть снова</button>
+  </div>
+</section>
+<script src="levels.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
